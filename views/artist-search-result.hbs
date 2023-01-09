@@ -1,0 +1,17 @@
+<section class="search-results">
+    <div class="artist">
+        {{ #each result }}
+        <div class="row">
+            <div class="col s12 m7">
+                <div class="card-image">
+                    <img src="{{ image.0.url }}">
+                    <span class="card-title">{{ name }}</span>
+                </div>
+                <div class="card-action">
+                    <a href="/albums/{{ id }}">View Albums</a>
+                </div>
+            </div>
+        </div>
+        {{ /each }}
+    </div>
+</section>
